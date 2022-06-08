@@ -3,7 +3,9 @@ from flask_wtf import FlaskForm
 from wtforms import SubmitField, FieldList, IntegerField, FormField, StringField, FloatField,SelectField
 from wtforms.validators import DataRequired, Length
 from wtforms.widgets import TextArea
-from approximation_schemes_AAWY import *
+from prtpy import BinsKeepingContents, BinsKeepingSums
+from .approximation_schemes_AAWY import mainAlgorithm
+
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "RandomString"
 

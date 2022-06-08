@@ -23,7 +23,7 @@ from prtpy.bins import BinsKeepingSums
 from heapq import heapreplace
 
 
-
+__all__=["mainAlgorithm"]
 def sublist_creator(x, n, sort=True):
     bins = [[0] for _ in range(n)]
     if sort:

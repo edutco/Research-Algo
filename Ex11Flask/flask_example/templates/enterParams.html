@@ -1,0 +1,24 @@
+<head>
+    <style>
+    .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #388ee3;
+    padding: 10px;
+    }
+    h1 {text-align: center;}
+    h1 {font-size: 40px;}
+    </style>
+</head>
+
+<form action="/rank" method="POST" role="form">
+    {{ form.hidden_tag() }}
+    <div class="center">
+        <h1>{{ form.f.label }}<br><br> {{ form.f() }} <br> </h1>
+        <h1>{{ form.e.label }}<br><br> {{ form.e() }} <br> </h1>
+        <h1>{{ form.bins.label }}<br><br> {{ form.bins() }} <br> </h1>
+        <h1>{{ form.jobs.label }}<br><br> {{ form.jobs() }} <br> </h1>
+        <h1>{{ form.sumsOrContent.label }}<br><br> {{ form.sumsOrContent() }} <br> </h1>
+        <h1>{{ form.s() }}</h1>
+    </div>
+</form>
